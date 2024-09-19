@@ -1,0 +1,227 @@
+[03-Dec-2023 20:49:51 Europe/Sofia] PHP Warning:  Undefined property: FrontCore::$site_url in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/autoload.php on line 61
+[03-Dec-2023 20:49:52 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/header.php:10
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/index.php(18): require_once()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/header.php on line 10
+[21-Feb-2024 13:04:29 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 24 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(24): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[21-Feb-2024 13:07:32 Europe/Sofia] PHP Fatal error:  Uncaught Error: Undefined constant "var_dump" in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 9
+[22-Feb-2024 12:13:38 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[22-Feb-2024 12:13:44 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[22-Feb-2024 12:13:46 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[22-Feb-2024 12:13:50 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[22-Feb-2024 12:13:52 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[26-Feb-2024 09:58:36 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required 'aws.phar' (include_path='.:/usr/share/php') in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/texttoimage-s3.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/texttoimage-s3.php on line 3
+[26-Feb-2024 10:00:07 Europe/Sofia] PHP Fatal error:  Uncaught InvalidArgumentException: Missing required client configuration options:
+
+region: (string)
+
+A "region" configuration value is required for the "s3" service
+(e.g., "us-west-2"). A list of available public regions and endpoints can be
+found at http://docs.aws.amazon.com/general/latest/gr/rande.html. in phar:///home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/aws.phar/Aws/ClientResolver.php:1217
+Stack trace:
+#0 phar:///home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/aws.phar/Aws/ClientResolver.php(1194): Aws\ClientResolver::_missing_region()
+#1 phar:///home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/aws.phar/Aws/ClientResolver.php(389): Aws\ClientResolver::_apply_region()
+#2 phar:///home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/aws.phar/Aws/AwsClient.php(223): Aws\ClientResolver->resolve()
+#3 phar:///home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/aws.phar/Aws/S3/S3Client.php(381): Aws\AwsClient->__construct()
+#4 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/texttoimage-s3.php(8): Aws\S3\S3Client->__construct()
+#5 {main}
+  thrown in phar:///home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/aws.phar/Aws/ClientResolver.php on line 1217
+[26-Feb-2024 10:07:29 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[26-Feb-2024 10:11:19 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[26-Feb-2024 10:31:01 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[26-Feb-2024 10:32:58 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[26-Feb-2024 10:36:55 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[26-Feb-2024 10:39:25 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Editor::__construct(): Argument #1 ($base64) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php on line 35 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(35): Editor->__construct()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[05-Mar-2024 16:16:26 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template::save_html(), 1 passed in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 159 and exactly 2 expected in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.template.php:59
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php(159): Template->save_html()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/api/savecontent.php(39): Editor->save()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.template.php on line 59
+[05-Mar-2024 16:52:09 Europe/Sofia] PHP Fatal error:  Uncaught Error: Undefined constant Editor::ID_FOOTER in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:81
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php(47): Editor->load_page()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php(15): Editor->__construct()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 81
+[05-Mar-2024 18:49:00 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Api::data(), 0 passed in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 216 and exactly 1 expected in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.api.php:216
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(216): Api::data()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.api.php on line 216
+[05-Mar-2024 18:53:33 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php:225
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 225
+[05-Mar-2024 18:59:31 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Template::__construct(): Argument #2 ($slug) must be of type string, null given, called in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 229 and defined in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.template.php:16
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(229): Template->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.template.php on line 16
+[05-Mar-2024 19:01:10 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template::save_html(), 1 passed in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 229 and exactly 2 expected in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.template.php:59
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(229): Template->save_html()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.template.php on line 59
+[05-Mar-2024 19:07:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Cannot use object of type Lang as array in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php:223
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 223
+[05-Mar-2024 20:42:55 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Editor::__construct(), 0 passed in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 231 and exactly 1 expected in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(231): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[05-Mar-2024 20:43:49 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Editor::__construct(), 0 passed in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 231 and exactly 1 expected in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(231): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[05-Mar-2024 20:46:29 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Editor::__construct(), 0 passed in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 231 and exactly 1 expected in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:27
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(231): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 27
+[05-Mar-2024 21:06:25 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Editor::$type of type string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:38
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(237): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 38
+[05-Mar-2024 21:06:46 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Editor::$type of type string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:38
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(237): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 38
+[05-Mar-2024 21:06:55 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Editor::$type of type string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:38
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(237): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 38
+[05-Mar-2024 21:08:05 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Editor::$type of type string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:38
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(238): Editor->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 38
+[05-Mar-2024 21:10:59 Europe/Sofia] PHP Fatal error:  Uncaught Error: Cannot use object of type Editor as array in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php:239
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 239
+[06-Mar-2024 10:43:38 Europe/Sofia] PHP Fatal error:  Uncaught Error: Class "Template" not found in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php:69
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/autoload.php(47): Page->__construct()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/index.php(4): require_once('/home/v3fronten...')
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 69
+[06-Mar-2024 11:41:28 Europe/Sofia] PHP Fatal error:  Uncaught Error: Call to undefined function vad_dump() in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/header.php:120
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/index.php(20): require_once()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/header.php on line 120
+[06-Mar-2024 13:09:46 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Editor::$revisions of type array in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:58
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php(48): Editor->getRevisions()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php(240): Editor->__construct()
+#2 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#3 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 58
+[06-Mar-2024 13:21:40 Europe/Sofia] PHP Fatal error:  Uncaught Error: Call to undefined function load_class() in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php on line 15
+[06-Mar-2024 13:21:48 Europe/Sofia] PHP Fatal error:  Uncaught Error: Call to undefined function load_class() in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php on line 15
+[06-Mar-2024 13:48:19 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:58
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php(48): Editor->getRevisions()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php(24): Editor->__construct()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 58
+[06-Mar-2024 16:32:08 Europe/Sofia] PHP Fatal error:  Uncaught Error: Call to undefined method Api::chche() in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/migration.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/migration.php on line 5
+[06-Mar-2024 16:35:34 Europe/Sofia] PHP Fatal error:  Uncaught Error: Call to undefined method Lang::set_lang() in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/migration.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/migration.php on line 12
+[07-Mar-2024 08:41:46 Europe/Sofia] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php:58
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php(48): Editor->getRevisions()
+#1 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/editor/cb/editor.php(25): Editor->__construct()
+#2 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.editor.php on line 58
+[07-Mar-2024 09:54:37 Europe/Sofia] PHP Fatal error:  Uncaught Error: Cannot access private property Template::$file in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php:236
+Stack trace:
+#0 /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/pages/other.php(15): Page::downloadPages()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront6.studiowebdemo.com/public_html/core/classes/class.page.php on line 236

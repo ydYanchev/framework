@@ -1,0 +1,323 @@
+<div class="is-section is-box is-section-auto copySection !bg-gray-50 dark:!bg-gray-900 last-box scroll-target" apidata="Memberships.get_memberships">
+    <div class="is-container is-content-none relative w-full py-[70px]">
+        <div class="container !block !mx-auto z-1">
+            <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4 justify-center">
+                <div class="col-span-12 sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                    <div class=" w-full relative mb-10">
+                        <div class="flex-auto p-4">
+                            <h2 class=" text-[100px] text-gray-200 dark:text-gray-800 leading-10 text-center abs">Членство</h2>
+                            <div class="text-center mb-5 mt-[-10px]">
+                                <h4 class="my-1 font-semibold text-[30px] md:text-[40px] dark:text-slate-200 mb-5 leading-12">Станете член 2</h4>
+                                <h6 class="text-gray-500 dark:text-gray-400 text-lg font-medium">
+                                    Присъединете се към нас и участвайте в изграждането на иновативно общество,
+                                    <br>
+                                    подпомагащо инвестициите и предприемачеството за общо благо.
+                                </h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+                <p class="col-span-12 text-[24px] text-gray-700 mt-3">Физически лица</p>
+                <template x-for="member in data.memberships.result">
+                    <template x-if="member.type == 1">
+                        <div class="col-span-12 sm:col-span-12  md:col-span-6 lg:col-span-4 xl:col-span-3 ">
+                            <div class="bg-white  h-full dark:bg-gray-800/40  rounded-md w-full relative transform translate-y-0 hover:-translate-y-4 duration-500 ease-in-out">
+                                <div class="flex-auto text-center p-8 md:p-14">
+                                    <span class="inline-flex  justify-center items-center h-[70px] w-[70px] rounded-full bg-white dark:bg-gray-800 border border-dashed border-[#2d309e]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="gem" class="lucide lucide-gem h-8 w-8 stroke-[#2d309e]">
+                                            <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                                            <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                                            <path d="M2 9h20"></path>
+                                        </svg>
+                                    </span>
+                                    <h2 x-text="member.title" class="font-bold text-2xl capitalize tracking-wide text-center my-4 text-gray-800 dark:text-slate-100">
+                                        Startup
+                                    </h2>
+                                    <div class="text-center text-slate-700 dark:text-slate-400 text-lg">
+                                        <div>
+                                            <p>
+                                                <span x-text="member.price" class="font-bold text-xl">300 лв</span>
+                                                <span>/</span>
+                                                <span x-text="member.membership_type.title">/година</span>
+
+                                            </p>
+                                            <template x-for="field in member.fields">
+                                                <p x-text="field.value"></p>
+                                            </template>
+
+                                        </div>
+                                        <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
+                                    </div>
+                                    <div class="block mt-3">
+                                        <p @click="data.memberPlan = member" class="block text-[#2d309e]  font-semibold  focus:outline-none">Искам да стана член <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right self-center inline-block ms-1 h-4 w-4">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </template>
+
+                </template>
+
+                <p class="col-span-12 text-[24px] text-gray-700 mt-5">Бизнес организации</p>
+                <template x-for="member in data.memberships.result">
+                    <template x-if="member.type == 2">
+                        <div class="col-span-12 sm:col-span-12  md:col-span-6 lg:col-span-4 xl:col-span-3 ">
+                            <div class="bg-white h-full dark:bg-gray-800/40  rounded-md w-full relative transform translate-y-0 hover:-translate-y-4 duration-500 ease-in-out">
+                                <div class="flex-auto text-center p-8 md:p-14">
+                                    <span class="inline-flex  justify-center items-center h-[70px] w-[70px] rounded-full bg-white dark:bg-gray-800 border border-dashed border-[#2d309e]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="gem" class="lucide lucide-gem h-8 w-8 stroke-[#2d309e]">
+                                            <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                                            <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                                            <path d="M2 9h20"></path>
+                                        </svg>
+                                    </span>
+                                    <h2 x-text="member.title" class="font-bold text-2xl capitalize tracking-wide text-center my-4 text-gray-800 dark:text-slate-100">
+                                        Startup
+                                    </h2>
+                                    <div class="text-center text-slate-700 dark:text-slate-400 text-lg">
+                                        <div>
+                                            <p>
+                                                <span x-text="member.price" class="font-bold text-xl">300 лв</span>
+                                                <span>/</span>
+                                                <span x-text="member.membership_type.title">/година</span>
+
+                                            </p>
+                                            <template x-for="field in member.fields">
+                                                <p x-text="field.value"></p>
+                                            </template>
+
+                                        </div>
+                                        <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
+                                    </div>
+                                    <div class="block mt-3">
+                                        <p @click="data.memberPlan = member" class="block text-[#2d309e]  font-semibold  focus:outline-none">Искам да стана член <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right self-center inline-block ms-1 h-4 w-4">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </template>
+
+                </template>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="is-section dark:!bg-gray-900 is-box is-section-auto box-autofit copySection last-box">
+    <div class="is-overlay"></div>
+    <div class="is-boxes">
+        <div class="is-box-centered is-opacity-100 ">
+            <div class="is-container" style="width: 100%;max-width: unset;padding: unset;">
+                <div class="grid md:grid-cols-2 grid-cols-1 pb-8 items-center mx-auto container md:py-24 py-16">
+                    <div>
+                        <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Какво получаваш</h6>
+                        <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold mb-4 md:mb-0 dark:text-white">
+                            Станете член днес
+                            <br>и започнете да изграждате своя път към <br> финансов успех и професионално развитие.
+                        </h3>
+                    </div>
+                    <p class="text-slate-400 max-w-xl"> Получeте достъп до ексклузивни образователни програми, ресурси и събития, които ще ви помогнат да разширите вашите познания и мрежа от контакти в областта на инвестициите. </p>
+                </div>
+                <div>
+                    <div class=" mx-auto container  md:py-24 py-16">
+                        <div class="grid grid-cols-1  justify-center">
+                            <div class="relative z-2 transition-all duration-500 ease-in-out m-0">
+                                <div class="grid md:grid-cols-3 grid-cols-1 gap-20">
+                                    <div class="flex flex-col items-center relative overflow-hidden p-6 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out border-t-8 border-[#2d309e]">
+                                        <div class="content mt-7 text-start">
+                                            <h2 class="title text-xl font-semibold dark:text-white text-center pb-5"> Застъпничество</h2>
+
+                                            <p class="text-slate-700 mt-2 "> Възможност да гласуваш по време на Общо събрание </p>
+                                            <p class="text-slate-700 mt-2 "> Директна демокрация – можеш да изразиш мнение в реално време </p>
+                                            <p class="text-slate-700 mt-2 "> Канал, чрез който можеш да алармираш BESCO в реално време за проблеми с институции, администрацията и/или други проблеми от твоя бизнес </p>
+                                            <p class="text-slate-700 mt-2 "> Възможност да подкрепиш иновативно и прогресивно законодателство, което цели да подобри икономиката на България </p>
+                                            <p class="text-slate-700 mt-2 "> Възможност за участие в работните групи, когато защитаваме нови закони пред институциите </p>
+
+                                        </div>
+                                    </div>
+                                    <div class=" relative flex flex-col items-center overflow-hidden p-6 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out border-t-8 border-[#2d309e]">
+                                        <div class="content mt-7 text-start">
+                                            <h2 class="title text-xl font-semibold dark:text-white text-center pb-5"> Фасилитирано промотиране</h2>
+
+                                            <p class="text-slate-700 mt-2 "> Директория на услуги и продукти с намаление (или друга добавена стойност)</p>
+                                            <p class="text-slate-700 mt-2 "> Достъп до множество отстъпки и услуги с добавена стойност, включително: юристи, консултации със счетоводители с опит в нетрадиционни казуси, медийни контакти, контакти с PR и маркетинг агенции, референции към фондове и ангелски инвеститори, аd hoc услуги и оферти от партньорски организации </p>
+
+                                        </div>
+                                    </div>
+                                    <div class=" relative flex flex-col  overflow-hidden p-6 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out border-t-8 border-[#2d309e]">
+                                        <div class="content mt-7 text-start">
+                                            <h2 class="title text-xl font-semibold dark:text-white text-center pb-5"> Какво получаваш</h2>
+
+                                            <p class="text-slate-700 mt-2 "> Достъп до онлайн пространство, в което компаниите общуват помежду си относно лични казуси, както и стратегически и тактически проблеми от национално значение </p>
+                                            <p class="text-slate-700 mt-2 "> Твоето лого на нашия сайт </p>
+                                            <p class="text-slate-700 mt-2 "> Нюзлетър - научаваш първи за прогреса на законодателните инициативи, предстоящи събития и важни новини за екосистемата</p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- START MEMBERS PLAN MODAL -->
+<div x-show="data.memberPlan" x-cloak="" class="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center bg-[#0000008a]">
+    <div class="flex flex-row justify-center w-full max-h-full">
+        <div class="overflow-y-auto pt-14 px-5 pb-3 bg-white  rounded-xl border relative  mix-blend-normal overflow-hidden  relative w-[800px] border-none screen ">
+            <div>
+
+                <p @click="data.memberPlan = false " class="z-10 cursor-pointer text-gray-400 text-[24px] absolute top-5 right-5"><i class="fa-solid fa-xmark" aria-hidden="true"></i></p>
+                <p x-text="data.memberPlan.title" class="text-[24px] text-gray-800 "></p>
+                <form class="grid grid-cols-2 gap-3 mt-4">
+                    <input type="hidden" name="type" :value="data.memberPlan.type">
+                    <input type="hidden" name="plan_id" :value="data.memberPlan.id">
+                    <div class="relative col-span-2">
+                        <input type="text" name="email" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer" placeholder=" ">
+                        <label class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">
+                            Имейл
+                        </label>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" name="first_name" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer" placeholder=" ">
+                        <label class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">
+                            Име
+                        </label>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" name="last_name" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer" placeholder=" ">
+                        <label class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">
+                            Фамилия
+                        </label>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" name="password" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer" placeholder=" ">
+                        <label class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">
+                            Парола
+                        </label>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" name="password2" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer" placeholder=" ">
+                        <label class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">
+                            Повтори парола
+                        </label>
+                    </div>
+
+                    <template x-if="data.memberPlan.type == 1">
+                        <select name="field" id="" class="col-span-2 block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer">
+                            <option value="">Сфера на работа</option>
+                            <option value="Ecommerce">Ecommerce</option>
+                        </select>
+                    </template>
+
+                    <!-- Бизнес -->
+                    <template x-if="data.memberPlan.type == 2">
+
+                        <div class="py-3 col-span-2">
+
+                            <div class="grid grid-cols-2 gap-3 ">
+                                <div class="relative">
+                                    <input type="text" placeholder=" " name="company_name" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer">
+                                    <label for="" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">Компания </label>
+                                </div>
+
+                                <div class="relative">
+                                    <input type="text" placeholder=" " name="company_mol" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer">
+                                    <label for="" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">Мол </label>
+                                </div>
+
+                                <div class="relative">
+                                    <input type="text" placeholder=" " name="company_address" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer">
+                                    <label for="" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">Адрес </label>
+                                </div>
+                                <div class="relative">
+                                    <input type="text" placeholder=" " name="company_phone" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer">
+                                    <label for="" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">Телефон</label>
+                                </div>
+
+                                <div class="relative">
+                                    <input type="text" placeholder=" " name="company_vat" class="block border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3.5 appearance-none  focus:outline-none focus:ring-0 focus:border-sky-700 peer">
+                                    <label for="" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] left-2.5 peer-focus:text-sky-700  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3">ЕИК </label>
+                                </div>
+
+                                <div class="flex items-end my-3">
+                                    <div class="flex items-center h-5">
+                                        <input type="checkbox" name="company_vat_registered" class="accent-[#2d309e] w-4 h-4 border border-gray-300 rounded bg-gray-50 scale-125 mr-2" value="0">
+                                    </div>
+                                    <label class="ml-2 text-basefont-medium text-gray-900 dark:text-gray-300">Регистрирана по ДДС</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </template>
+
+                    <div class="flex items-end  col-span-2">
+                        <div>
+                            <input type="checkbox" name="agreeTerms" class="accent-[#2d309e] w-4 h-4 border border-gray-300 rounded bg-gray-50 scale-125 mr-2" value="0">
+                            <span @click="alpineListeners('Pages.get_pages', $event)" data-name="agreeTerms" data-id="7" class="ml-2 text-basefont-medium text-gray-900 dark:text-gray-300">Съгласявам се с условията на ползване</span>
+                        </div>
+                    </div>
+                    <div class="flex items-end  col-span-2">
+                        <div>
+                            <input type="checkbox" name="agreePolicy" class="accent-[#2d309e] w-4 h-4 border border-gray-300 rounded bg-gray-50 scale-125 mr-2" value="0">
+                            <span @click="alpineListeners('Pages.get_pages', $event)" data-name="agreePolicy" data-id="5" class="ml-2 text-basefont-medium text-gray-900 dark:text-gray-300">Съгласявам се с политиката на поверителност</span>
+                        </div>
+                    </div>
+                    <div class="flex items-end  col-span-2">
+                        <div>
+                            <input type="checkbox" name="agreeStatute" class="accent-[#2d309e] w-4 h-4 border border-gray-300 rounded bg-gray-50 scale-125 mr-2" value="0">
+                            <span @click="alpineListeners('Pages.get_pages', $event)" data-name="agreeStatute" data-id="36" class="ml-2 text-basefont-medium text-gray-900 dark:text-gray-300">Съгласявам се с устава за инвестиране</span>
+                        </div>
+                    </div>
+
+                    <p @click="status = await alpineListeners('User.post_application', $event); console.log(status); if(status == 1){data.memberPlan = false}" class="w-full col-span-2 text-center py-2.5 px-10 rounded bg-[#2d309e] text-white cursor-pointer mt-2">Присъедини се</p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START MEMBERS PLAN MODAL -->
+
+<!-- START MEMBERS PLAN MODAL -->
+<div x-show="data.page" x-cloak="" class="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center bg-[#0000008a]">
+    <div class="flex flex-row justify-center w-full max-h-full">
+        <div @mousedown.outside="data.page=false" class="overflow-y-auto pt-10 px-5 pb-3 bg-white  rounded-xl border relative  mix-blend-normal overflow-hidden  relative md:w-2/3 w-full  border-none screen m-[5%] ">
+            <p @click="data.page = false " class="z-10 cursor-pointer text-gray-400 text-[24px] absolute top-5 right-5"><i class="fa-solid fa-xmark" aria-hidden="true"></i></p>
+            <div x-html="data.page.description"></div>
+            <div class="flex gap-5 justify-end border-t border-gray-300 pt-4 pb-2">
+                <p @click="document.getElementsByName(data.page.agreeName)[0].checked = true;data.page = false" class="text-[#2d309e] font-bold text-[18px] cursor-pointer">Agree</p>
+                <p @click="data.page = false " class="text-[#2d309e] font-bold text-[18px] cursor-pointer">Close</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START MEMBERS PLAN MODAL -->
